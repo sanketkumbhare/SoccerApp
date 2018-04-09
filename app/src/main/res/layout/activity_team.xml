@@ -20,7 +20,7 @@
     <FrameLayout
         android:id="@+id/team_frame_layout"
         android:layout_width="match_parent"
-        android:layout_height="453dp"
+        android:layout_height="511dp"
         android:text="@string/title_scores"
         app:layout_constraintBottom_toTopOf="@+id/navigation"
         app:layout_constraintEnd_toEndOf="parent"
