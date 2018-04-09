@@ -7,6 +7,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 
 import com.sanketkumbhare.soccerapp.R;
 import com.sanketkumbhare.soccerapp.activities.PlayerActivity;
@@ -20,6 +22,7 @@ public class SearchTeamAdapter extends RecyclerView.Adapter<SearchViewHolder> {
 
     private Context mContext;
     private List<Team> mSearchList;
+    private int lastPosition=-1;
 
     public SearchTeamAdapter(Context mContext, List<Team> mSearchList) {
         this.mContext = mContext;
@@ -34,7 +37,7 @@ public class SearchTeamAdapter extends RecyclerView.Adapter<SearchViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull SearchViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull final SearchViewHolder holder, final int position) {
         holder.text_sreach_name.setText(mSearchList.get(position).getStrTeam());
         holder.text_search_stadium.setText(mSearchList.get(position).getStrStadium());
         holder.text_search_sport.setText(mSearchList.get(position).getStrSport());
@@ -62,6 +65,8 @@ public class SearchTeamAdapter extends RecyclerView.Adapter<SearchViewHolder> {
                 intent.putExtra("teamId",String.valueOf(mSearchList.get(position).getIdTeam()))
                         .putExtra("teamName",mSearchList.get(position).getStrTeam());
                 mContext.startActivity(intent);
+
+                setAnimation(holder.itemView,position);
             }
         });
     }
@@ -69,5 +74,16 @@ public class SearchTeamAdapter extends RecyclerView.Adapter<SearchViewHolder> {
     @Override
     public int getItemCount() {
         return mSearchList.size();
+    }
+
+    private void setAnimation(View viewToAnimate, int position)
+    {
+        // If the bound view wasn't previously displayed on screen, it's animated
+        if (position > lastPosition)
+        {
+            Animation animation = AnimationUtils.loadAnimation(mContext, R.anim.item_animation_fall_down);
+            viewToAnimate.startAnimation(animation);
+            lastPosition = position;
+        }
     }
 }

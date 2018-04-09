@@ -58,7 +58,7 @@ public class ResultAdapter extends RecyclerView.Adapter<ResultViewHolder>{
         // If the bound view wasn't previously displayed on screen, it's animated
         if (position > lastPosition)
         {
-            Animation animation = AnimationUtils.loadAnimation(mContext, android.R.anim.slide_in_left);
+            Animation animation = AnimationUtils.loadAnimation(mContext, R.anim.item_animation_fall_down);
             viewToAnimate.startAnimation(animation);
             lastPosition = position;
         }

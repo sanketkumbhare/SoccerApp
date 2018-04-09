@@ -56,7 +56,7 @@ public class NextEventAdapter extends RecyclerView.Adapter<NextViewHolder> {
         // If the bound view wasn't previously displayed on screen, it's animated
         if (position > lastPosition)
         {
-            Animation animation = AnimationUtils.loadAnimation(mContext, android.R.anim.slide_in_left);
+            Animation animation = AnimationUtils.loadAnimation(mContext,R.anim.item_animation_from_right);
             viewToAnimate.startAnimation(animation);
             lastPosition = position;
         }
