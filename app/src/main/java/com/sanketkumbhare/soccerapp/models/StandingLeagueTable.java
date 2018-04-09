@@ -87,29 +87,6 @@ public class StandingLeagueTable {
         this.played = played;
     }
 
-    public int getGoalsfor() {
-        return goalsfor;
-    }
-
-    public void setGoalsfor(int goalsfor) {
-        this.goalsfor = goalsfor;
-    }
-
-    public int getGoalsagainst() {
-        return goalsagainst;
-    }
-
-    public void setGoalsagainst(int goalsagainst) {
-        this.goalsagainst = goalsagainst;
-    }
-
-    public int getGoalsdifference() {
-        return goalsdifference;
-    }
-
-    public void setGoalsdifference(int goalsdifference) {
-        this.goalsdifference = goalsdifference;
-    }
 
     public int getWin() {
         return win;

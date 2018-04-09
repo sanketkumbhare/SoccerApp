@@ -60,53 +60,6 @@ public class LiveScore {
         this.date = date;
     }
 
-    public String getLeague() {
-        return league;
-    }
-
-    public void setLeague(String league) {
-        this.league = league;
-    }
-
-    public String getRound() {
-        return round;
-    }
-
-    public void setRound(String round) {
-        this.round = round;
-    }
-
-    public String getHomeTeam() {
-        return homeTeam;
-    }
-
-    public void setHomeTeam(String homeTeam) {
-        this.homeTeam = homeTeam;
-    }
-
-    public String getHomeTeamId() {
-        return homeTeamId;
-    }
-
-    public void setHomeTeamId(String homeTeamId) {
-        this.homeTeamId = homeTeamId;
-    }
-
-    public String getAwayTeam() {
-        return awayTeam;
-    }
-
-    public void setAwayTeam(String awayTeam) {
-        this.awayTeam = awayTeam;
-    }
-
-    public String getAwayTeamId() {
-        return awayTeamId;
-    }
-
-    public void setAwayTeamId(String awayTeamId) {
-        this.awayTeamId = awayTeamId;
-    }
 
     public String getTime() {
         return time;
@@ -116,27 +69,5 @@ public class LiveScore {
         this.time = time;
     }
 
-    public String getHomeGoals() {
-        return homeGoals;
-    }
 
-    public void setHomeGoals(String homeGoals) {
-        this.homeGoals = homeGoals;
-    }
-
-    public String getAwayGoals() {
-        return awayGoals;
-    }
-
-    public void setAwayGoals(String awayGoals) {
-        this.awayGoals = awayGoals;
-    }
-
-    public String getLocation() {
-        return location;
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
-    }
 }
