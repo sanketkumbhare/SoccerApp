@@ -40,6 +40,7 @@
 
             <TextView
                 android:id="@+id/card_league_table_team_name"
+                android:fontFamily="@font/font"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -52,6 +53,7 @@
 
                 <TextView
                     android:id="@+id/card_league_table_played"
+                    android:fontFamily="@font/font"
                     android:layout_width="wrap_content"
                     android:text="played"
                     android:layout_height="wrap_content"
@@ -62,6 +64,7 @@
 
                 <TextView
                     android:id="@+id/card_league_table_win"
+                    android:fontFamily="@font/font"
                     android:layout_width="wrap_content"
                     android:text="win"
                     android:layout_height="wrap_content"
@@ -73,6 +76,7 @@
                 <TextView
                     android:text="draw"
                     android:id="@+id/card_league_table_draw"
+                    android:fontFamily="@font/font"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
@@ -82,6 +86,7 @@
 
                 <TextView
                     android:id="@+id/card_league_table_loss"
+                    android:fontFamily="@font/font"
                     android:text="loss"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

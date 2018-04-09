@@ -21,7 +21,7 @@
 
         <TextView
             android:id="@+id/card_search_team_name"
-            android:text="Team Name"
+            android:fontFamily="@font/font"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/text_margin_small"
@@ -51,6 +51,7 @@
 
                 <TextView
                     android:id="@+id/card_search_team_league"
+                    android:fontFamily="@font/font"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/text_margin_small"
@@ -59,6 +60,7 @@
 
                 <TextView
                     android:id="@+id/card_search_team_sport"
+                    android:fontFamily="@font/font"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
@@ -78,7 +80,7 @@
 
         <TextView
             android:id="@+id/card_search_team_stadium"
-            android:text="Stadium Name"
+            android:fontFamily="@font/font"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"

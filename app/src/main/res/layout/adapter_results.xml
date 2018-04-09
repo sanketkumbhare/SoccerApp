@@ -20,6 +20,7 @@
 
         <TextView
             android:id="@+id/card_event_match_name"
+            android:fontFamily="@font/font"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/text_margin_small"
@@ -56,6 +57,7 @@
 
                     <TextView
                         android:id="@+id/card_event_home_team_score"
+                        android:fontFamily="@font/font"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="@dimen/text_margin_very_small"
@@ -64,6 +66,7 @@
 
                     <TextView
                         android:layout_width="wrap_content"
+                        android:fontFamily="@font/font"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/text_margin_small"
                         android:layout_marginRight="@dimen/text_margin_small"
@@ -73,6 +76,7 @@
 
                     <TextView
                         android:id="@+id/card_event_away_team_score"
+                        android:fontFamily="@font/font"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="@dimen/text_margin_small"
@@ -83,6 +87,7 @@
 
                 <TextView
                     android:id="@+id/card_event_match_date"
+                    android:fontFamily="@font/font"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/text_margin_very_small"
