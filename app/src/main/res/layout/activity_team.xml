@@ -15,7 +15,7 @@
         android:focusableInTouchMode="true"
         android:minHeight="?attr/actionBarSize"
         android:theme="@style/AppTheme.AppBarOverlay"
-        app:titleTextAppearance="@font/font"/>
+        app:titleTextAppearance="@style/MineCustomToolbar"/>
 
     <FrameLayout
         android:id="@+id/team_frame_layout"

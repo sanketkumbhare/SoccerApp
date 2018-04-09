@@ -14,7 +14,7 @@
         android:focusableInTouchMode="true"
         android:minHeight="?attr/actionBarSize"
         android:theme="@style/AppTheme.AppBarOverlay"
-        app:titleTextAppearance="@font/font"
+        app:titleTextAppearance="@style/MineCustomToolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
