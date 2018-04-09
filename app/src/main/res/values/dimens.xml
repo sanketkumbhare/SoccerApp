@@ -4,9 +4,9 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
 
     <dimen name="card_margin_horizontal_big_activity">8dp</dimen>
-    <dimen name="card_margin_vertical_big_activity">4dp</dimen>
+    <dimen name="card_margin_vertical_big_activity">10dp</dimen>
     <dimen name="card_recycler_corner_radius">2dp</dimen>
-    <dimen name="card_recycler_elevation">2dp</dimen>
+    <dimen name="card_recycler_elevation">12dp</dimen>
 
 
     <dimen name="badge">68dp</dimen>
@@ -17,4 +17,6 @@
     <dimen name="text_margin">16dp</dimen>
     <dimen name="text_margin_small">8dp</dimen>
     <dimen name="text_margin_very_small">4dp</dimen>
+    <dimen name="corner_radius">15dp</dimen>
+    <dimen name="card_elevation">10dp</dimen>
 </resources>

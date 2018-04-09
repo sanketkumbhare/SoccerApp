@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
     android:id="@+id/card_news"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -13,9 +14,10 @@
     android:focusable="true"
     android:clickable="true"
     android:foreground="?attr/selectableItemBackground"
-    card_view:cardCornerRadius="5dp"
-    card_view:cardElevation="10dp">
-        <RelativeLayout
+    app:cardCornerRadius="@dimen/card_recycler_corner_radius"
+    app:cardElevation="@dimen/card_recycler_elevation">
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="@dimen/text_margin">
@@ -36,7 +38,6 @@
 
             <TextView
                 android:id="@+id/news_title"
-                android:text="@string/headlines"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/primary_text"
@@ -44,7 +45,6 @@
 
             <TextView
                 android:id="@+id/news_description"
-                android:text="@string/description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/text_margin_small"
