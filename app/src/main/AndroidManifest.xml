@@ -27,7 +27,7 @@
         <activity android:name=".activities.TeamActivity"
             android:windowSoftInputMode="adjustPan|stateHidden"/>
         <activity android:name=".activities.PlayerActivity" />
-        <activity android:name=".activities.SearchActivity"></activity>
+        <activity android:name=".activities.SearchActivity" />
     </application>
 
 </manifest>
