@@ -14,7 +14,8 @@
         android:background="?attr/colorPrimary"
         android:focusableInTouchMode="true"
         android:minHeight="?attr/actionBarSize"
-        android:theme="@style/AppTheme.AppBarOverlay" />
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:titleTextAppearance="@font/font"/>
 
     <FrameLayout
         android:id="@+id/team_frame_layout"
