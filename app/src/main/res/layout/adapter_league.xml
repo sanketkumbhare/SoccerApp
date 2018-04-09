@@ -47,7 +47,7 @@
 
             <TextView
                 android:id="@+id/card_league_league_name_country"
-                android:fontFamily="@font/font"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/text_margin_small"
