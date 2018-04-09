@@ -46,7 +46,7 @@ public class NextEventAdapter extends RecyclerView.Adapter<NextViewHolder> {
 
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
+
     @Override
     public void onBindViewHolder(@NonNull NextViewHolder holder, int position) {
         holder.text_next_event.setText(mNextEvent.get(position).getStrEvent());
