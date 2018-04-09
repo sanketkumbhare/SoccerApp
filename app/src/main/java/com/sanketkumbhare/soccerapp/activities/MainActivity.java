@@ -96,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.main, menu);
         final MenuItem searchMenuItem = menu.findItem(R.id.action_search);
         final SearchView searchView = (SearchView) searchMenuItem.getActionView();
+        searchView.setBackgroundResource(R.drawable.shape);
         searchView.setQueryHint(getString(R.string.teams_Search));
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override

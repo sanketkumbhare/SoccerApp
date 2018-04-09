@@ -10,6 +10,7 @@ import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import com.sanketkumbhare.soccerapp.R;
@@ -17,6 +18,8 @@ import com.sanketkumbhare.soccerapp.adapter.ViewPagerAdapter;
 import com.sanketkumbhare.soccerapp.fragments.search_player_fragment;
 import com.sanketkumbhare.soccerapp.fragments.search_team_fragment;
 import com.sanketkumbhare.soccerapp.utils.NetworkConnection;
+
+import java.util.Objects;
 
 public class SearchActivity extends AppCompatActivity {
 
@@ -46,6 +49,13 @@ public class SearchActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.search_toolbar);
         setSupportActionBar(toolbar);
         setTitle(title);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
 
     }
    }
